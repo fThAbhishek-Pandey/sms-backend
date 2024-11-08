@@ -1,5 +1,5 @@
 import express from 'express'
-import Login from '../Controlers/Admin/login.js';
+import Login from '../Controlers/admin/login.js';
 import authAdmin from '../middleware/admin/authAdmin.js';
 import addEmploy from '../Controlers/Admin/addEmploy.js';
 import reciptHistory from '../Controlers/Admin/getRecieptHistory.js';
