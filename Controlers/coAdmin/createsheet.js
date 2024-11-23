@@ -1,12 +1,13 @@
 import SheetModel from "../../Modules/spreadDataModel.js";
 const createsheet = async (req,res) => {
      try {
-        const { month, employee } = req.body
-        console.log("all data",month, employee)
+        const {spreadData} = req.body
+        const { month, employee } = spreadData
+        console.log("all data",month,"ji", employee )
         if ( !month || !employee){
             res.json({success:false, message:"Fill all data"});
         }
-         const newSpread = new  SheetModel({month, employee});
+         const newSpread = new  SheetModel(spreadData);
           newSpread.save();
           res.json({success:true, message :"sheet save"});
      } catch (error) {

@@ -26,7 +26,7 @@ const EmployeeSchema = new mongoose.Schema({
     required: true,
   },
   dec_depart: {
-    type: Number,
+    type:String,
     required: true,
   },
   ele_ch: {
