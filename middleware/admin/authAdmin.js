@@ -3,8 +3,7 @@ import jwt from 'jsonwebtoken'
 const authAdmin = (req,res,next)=>{
     try {
           const {admintoken} = req.headers;
-          console.log(req.headers);
-          console.log("adminToken : ",admintoken);
+          console.log("adminToken auth : ",admintoken);
           if(!admintoken) {
             return res.json({success:false, message: "admin token should not be NUll or undefined"});
           }

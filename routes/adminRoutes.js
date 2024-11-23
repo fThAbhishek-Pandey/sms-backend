@@ -11,6 +11,6 @@ AdminRouter.post('/login', Login);
 AdminRouter.post('/add-employee', [authAdmin],addEmploy);
 AdminRouter.get('/reciept-history', [authAdmin],reciptHistory);
 AdminRouter.get('/months', [authAdmin],allmonths );
-AdminRouter.get('/months/one', [authAdmin],monthOne );
+AdminRouter.post('/months/one', [authAdmin],monthOne );
 AdminRouter.post('/mail', [authAdmin], sendMail);
 export default AdminRouter;
