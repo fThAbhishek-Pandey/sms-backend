@@ -21,7 +21,7 @@ const salaryData =async ( sheet_id)=>{
           }
         )
           
-           console.log("01",allData);
+          //  console.log("01",allData);
            return allData
         
         } catch (error) {
