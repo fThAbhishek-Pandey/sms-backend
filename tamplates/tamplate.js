@@ -1,9 +1,7 @@
 
 const htmlTemplates = (salary_Data)=>{
     console.log("02",salary_Data);
-    const {
-        employee_id, pay, DA,DA_rupee, npda, HRA,dec_depart, ele_ch, nps_per, nps_rupee,total,payment,
-        email,month, design, name,  depart,  doj, dob}= salary_Data;
+    const { emp_id, name,design,pay,DA ,HRA ,dec_depart,ele_ch,nps_per,nps_rupee,_id,month,depart, npda,payment,DA_rupee,total,email,dob, doj}= salary_Data;
     return `
 
     <!DOCTYPE html>
@@ -58,7 +56,7 @@ const htmlTemplates = (salary_Data)=>{
     <h1>Salary Slip for the month of August - 2024</h1>
     <div class="employe_box">
         <div class="left_box">
-            <h4>Employee ID : ${employee_id}</h4>
+            <h4>Employee ID : ${emp_id}</h4>
             <h4>Emloyee Name : ${name}</h4>
             <h4>D.O.B. : ${dob}</h4>
         </div>
