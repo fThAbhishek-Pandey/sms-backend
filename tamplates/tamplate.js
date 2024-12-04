@@ -1,6 +1,6 @@
 
 const htmlTemplates = (salary_Data)=>{
-    console.log("02",salary_Data);
+    // console.log("02",salary_Data);
     const { emp_id, name,design,pay,DA ,HRA ,dec_depart,ele_ch,nps_per,nps_rupee,_id,month,depart, npda,payment,DA_rupee,total,email,dob, doj}= salary_Data;
     return `
 

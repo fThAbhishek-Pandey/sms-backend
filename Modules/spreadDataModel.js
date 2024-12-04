@@ -41,6 +41,10 @@ const EmployeeSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  mailed: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const SheetSchema = new mongoose.Schema({
@@ -60,10 +64,7 @@ const SheetSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-  mailed: {
-    type: Boolean,
-    default: false,
-  },
+ 
 });
 
 const SheetModel =
