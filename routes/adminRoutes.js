@@ -17,4 +17,5 @@ AdminRouter.get('/months', [authAdmin],allmonths );
 AdminRouter.post('/months/one', [authAdmin],monthOne );
 AdminRouter.post('/mail', [authAdmin], sendMail);
 AdminRouter.post('/mail/one', [authAdmin], sendMailOne);
+AdminRouter.post('/employee', [authAdmin]);
 export default AdminRouter;
